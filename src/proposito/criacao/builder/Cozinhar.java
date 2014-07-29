@@ -10,7 +10,7 @@ package proposito.criacao.builder;
  */
 public class Cozinhar {
     /*
-     * Deve possuir 1..n builders porque possui uma agregacao de builders
+     * Pode possuir de 1..n builders porque possui uma agregacao de builders
      */
     private PizzaBuilder pizzabuilder;
     /*
@@ -24,14 +24,6 @@ public class Cozinhar {
      */
     public Pizza getPizza(){
         return pizzabuilder.getPizza();
-    }
-    
-    public void setCobertura(String cobertura){
-        pizzabuilder.pizza.setCobertura(cobertura);
-    }
-    
-    public void setTempero(String tempero){
-        pizzabuilder.pizza.setTempero(tempero);
     }
     /*
      * Construcao da pizza
