@@ -8,6 +8,10 @@ import java.util.ArrayList;
  * @since Aug 1, 2014
  * 
  * Classe composta
+ * 
+ * Composite é o padrão de se manipular elementos em uma hierarquia parte todo
+ * tornando transparente para o cliente se ele está manipulando uma folha ou uma
+ * composição de objetos.
  */
 public class Composit extends Component{
     /**

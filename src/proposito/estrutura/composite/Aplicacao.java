@@ -12,7 +12,7 @@ public class Aplicacao {
          * Criação de dois elementos folha
          */
         Leaf folha1 = new Leaf();
-        Leaf folha2 = new Leaf();
+        Leaf1 folha2 = new Leaf1();
         /*
          * Criação de 3 elementos compostos 
          */
@@ -23,7 +23,8 @@ public class Aplicacao {
          * Adiciona elementos ao elemento composto 
          */
         c1.add(folha1);
-        c1.add(folha2);
+        c2.add(folha2);
+        c1.add(folha1);
         c2.add(folha2);
         /*
          * Adiciona elementos compostos aos elementos compostos 
@@ -31,6 +32,7 @@ public class Aplicacao {
          */
         c1.add(c2);
         c1.add(c3);
+        c1.remove(c2);
         /*
          * Imprime na tela
          */
