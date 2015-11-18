@@ -7,7 +7,15 @@ import java.util.Scanner;
  * @author Fabricio Nogueira - nogsantos
  * @since Jul 30, 2014
  * 
- * Execucao
+ * FACTORY Method
+ * 
+ * Define uma interface para criar um objeto, mas deixa as subclasses decidirem 
+ * qual classe instanciar
+ * 
+ * Use Factory Method quando:
+ *  Uma classe não pode antecipar a classe de objetos que ela deve criar
+ *  Uma classe quer que suas subclasses especifiquem os objetos que ela cria
+ * 
  */
 public class Aplicacao {
     public static void main(String[] args) throws Exception {
