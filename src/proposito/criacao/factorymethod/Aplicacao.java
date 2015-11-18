@@ -10,15 +10,15 @@ import java.util.Scanner;
  * Execucao
  */
 public class Aplicacao {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         /*
          * Entrada de dados
          */
         Scanner in = new Scanner(System.in);
         System.out.println("Nome");
         String nome = in.nextLine();
-        System.out.println("Sexo");
-        String sexo = in.nextLine();
+        System.out.println("Sexo (M ou F)");
+        String sexo = in.nextLine().trim().toUpperCase();
         /*
          * As regras são passadas para a factory
          */
