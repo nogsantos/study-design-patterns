@@ -9,7 +9,7 @@ package proposito.estrutura.adapter;
  */
 public class PlugDoisPinos {
     public void ligarDoisPinos(Tomada t){
-        System.out.println("Dois pinos");
+        System.out.println("Adaptardor Dois pinos para três pinos...");
     }
 }
 

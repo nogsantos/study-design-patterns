@@ -9,6 +9,6 @@ package proposito.estrutura.adapter;
  */
 public class PlugTresPinos {
     public void ligarTresPinos(Tomada t){
-        System.out.println("Tres pinos");
+        System.out.println("Adaptador Tres pinos para dois pinos");
     }
 }
