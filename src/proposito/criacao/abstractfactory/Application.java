@@ -6,6 +6,17 @@ package proposito.criacao.abstractfactory;
  * @since July 2014
  *
  * Na aplicacao em execucao, o programa recebe uma factory
+ * 
+ * Proporciona uma interface para criar famílias de objetos relacionados 
+ * ou dependentes sem especificar suas classes concretas.
+ * Usar quando:
+ * O sistema deve ser configurado com uma de múltiplas famílias de produtos. 
+ * Estes produtos relacionados são projetados para serem utilizados juntos,
+ * e você quer garantir essa restrição.
+ *
+ * Ps.: Enquanto abstract factory enfatiza famílias de objetos relacionados, 
+ * builder constrói partes desse objeto passo a passo. 
+ *
  */
 public class Application {
     /*
