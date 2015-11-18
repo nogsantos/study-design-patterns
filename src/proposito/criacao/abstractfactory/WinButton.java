@@ -7,7 +7,7 @@ package proposito.criacao.abstractfactory;
  * 
  * PRODUTO CONCRETO
  */
-public class WinButton implements Button{
+public class WinButton implements AbstractButton{
     /*
      * Implementacao do metodo abstrato do Produto
      */

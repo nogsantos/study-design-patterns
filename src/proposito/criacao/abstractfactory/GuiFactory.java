@@ -1,8 +1,6 @@
 
 package proposito.criacao.abstractfactory;
 
-import java.awt.Button;
-
 /**
  * @author Fabricio Nogueira - nogsantos
  * @since July 2014
@@ -18,5 +16,5 @@ public interface GuiFactory {
     /*
      * Metodo generico para criar botao
      */
-    public Button createButton();
+    public AbstractButton createButton();
 }

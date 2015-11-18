@@ -1,8 +1,6 @@
 
 package proposito.criacao.abstractfactory;
 
-import java.awt.Button;
-
 /**
  * @author Fabricio Nogueira - nogsantos
  * @since July 2014
@@ -19,7 +17,7 @@ public class WinFactory implements GuiFactory{
      * Nesse caso, esse metodo retorna um PRODUTO da familia WIN WinButton
      */
     @Override
-    public Button createButton() {
+    public AbstractButton createButton() {
         return new WinButton();
     }
     

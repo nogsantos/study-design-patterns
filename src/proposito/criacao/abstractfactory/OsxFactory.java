@@ -1,7 +1,7 @@
 
 package proposito.criacao.abstractfactory;
 
-import java.awt.Button;
+
 
 /**
  * @author Fabricio Nogueira - nogsantos
@@ -19,8 +19,7 @@ public class OsxFactory implements GuiFactory{
      * Nesse caso, esse metodo retorna um PRODUTO da familia OSX OsxButton
      */
     @Override
-    public Button createButton() {
+    public AbstractButton createButton() {
         return new OsxButton();
     }
-    
 }

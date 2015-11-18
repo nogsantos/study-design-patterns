@@ -7,7 +7,7 @@ package proposito.criacao.abstractfactory;
  * 
  * PRODUTO CONCRETO
  */
-public class OsxButton implements Button{
+public class OsxButton implements AbstractButton{
     /*
      * Implementacao do metodo abstrato do Produto
      */

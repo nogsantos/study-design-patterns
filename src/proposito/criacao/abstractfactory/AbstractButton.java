@@ -9,7 +9,7 @@ package proposito.criacao.abstractfactory;
  * Os produtos, no padrao object factory, sao os objetos que se deseja criar.
  * Podem ser dezenas de produtos em uma situacao real.
  */
-public interface Button {
+public interface AbstractButton {
     /*
      * Um metodo abstrado para pintar qualquer coisa na tela.
      */

@@ -33,7 +33,7 @@ public class Application {
          * instanciando e tambem nao se sabe qual factory esta sendo chamada em 
          * tempo de compilacao so se sabe em tempo de execucao 
          */
-        Button button = factory.createButton();
+        AbstractButton button = factory.createButton();
         /*
          * Metodos chamados
          */
