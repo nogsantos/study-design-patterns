@@ -13,6 +13,7 @@ public class Singleton {
      * por essa classe a saída fica por conta do metodo getInstance()
      */
     private static final Singleton INSTANCE = new Singleton();
+    private String message;
     /*
      * Construtor
      * O construtor privado impede que outras classes o acesse diretamente.
@@ -25,6 +26,30 @@ public class Singleton {
      */
     public static Singleton getInstance(){
         return INSTANCE;
+    }
+    
+    public void message(){
+        System.out.println("Menasagem um");
+    }
+    
+    public void separador(){        
+        System.out.println("-------------------------------");
+    }
+    
+    public void messageDois(){
+        System.out.println("Cria uma nova mensagem");
+    }    
+       
+    public void messageTres(){
+        System.out.println("Cria uma nova mensagem com o parâmetro: "+this.message);
+    }
+    
+    public void setMessage(String message){
+        this.message = message;
+    }
+    
+    public String getMessage(){
+        return this.message;
     }
     
 }
