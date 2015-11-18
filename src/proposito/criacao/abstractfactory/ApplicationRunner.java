@@ -5,7 +5,14 @@ package proposito.criacao.abstractfactory;
  * @author Fabricio Nogueira - nogsantos
  * @since July 2014
  * 
- * Roda a aplicacao
+ * Abstract factory
+ * Proporciona uma interface para criar famílias de objetos relacionados ou 
+ * dependentes sem especificar suas classes concretas
+ * 
+ * Use Abstract Factory quando:
+ *  O sistema deve ser configurado com uma de múltiplas famílias de produtos
+ *  Estes produtos relacionados são projetados para serem utilizados juntos, e
+ * você quer garantir essa restrição
  */
 public class ApplicationRunner {
     /*
