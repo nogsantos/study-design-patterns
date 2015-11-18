@@ -5,7 +5,16 @@ package proposito.criacao.prototype;
  * @author Fabricio Nogueira - nogsantos
  * @since Jul 30, 2014
  * 
- * Classe cliente 
+ * Prototype
+ * 
+ * Especifica os tipos de objetos para criar usando uma instância prototípica, 
+ * e cria novos objetos copiando este protótipo (clonando o objeto original) e
+ * possibilita alterar partes desse objeto.
+ * 
+ * Use Prototype quando:
+ *  O sistema possui componentes cujo estado inicial tem poucas variações, 
+ *  e é conveniente disponibilizar um conjunto pré estabelecido de protótipos 
+ *  que dão origem aos objetos que compõem o sistema.
  */
 public class Cliente {
 
@@ -17,7 +26,7 @@ public class Cliente {
     private Documento ascii = new AscII();
     private Documento pdf   = new Pdf();
     
-    public Documento criarDocumento(int tipo){
+    public Documento criarDocumento(int tipo) throws CloneNotSupportedException{
         /*
          * Baseado no tipo passado como parametro, são 
          * retornados clones dos objetos originais.
