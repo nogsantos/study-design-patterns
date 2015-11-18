@@ -4,6 +4,15 @@ package proposito.criacao.builder;
 /**
  * @author Fabricio Nogueira - nogsantos
  * @since Jul 29, 2014
+ * 
+ * Builder
+ * 
+ * Separa a construção de um objeto complexo da sua representação, de forma 
+ * que o mesmo processo possa criar diferentes tipos de representações
+ * 
+ * Use Builder quando:
+ *  O algoritmo para criar um objeto deve ser independente de suas 
+ *  partes e de como elas são montadas
  */
 public class Execucao {
     public static void main(String[] args) {
