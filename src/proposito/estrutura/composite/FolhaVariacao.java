@@ -8,10 +8,10 @@ package proposito.estrutura.composite;
  * Folhas em árvores são objetos que não possuem extensão, não há mais nenhuma
  * estrutura de objetos abaixo delas 
  */
-public class Leaf1 extends Component{
+public class FolhaVariacao implements Componente{
     
     @Override
     public void print(){
-        System.out.println("Leaf #1");
+        System.out.println("Variação do componente concreto");
     }
 }

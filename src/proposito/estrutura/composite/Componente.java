@@ -5,9 +5,9 @@ package proposito.estrutura.composite;
  * @author Fabricio Nogueira - nogsantos
  * @since Aug 1, 2014
  * 
- * Classe composta
+ * Component
  */
-public class Component {
+public interface Componente {
     
-    public void print(){}
+    public void print();
 }

@@ -7,19 +7,19 @@ import java.util.ArrayList;
  * @author Fabricio Nogueira - nogsantos
  * @since Aug 1, 2014
  * 
- * Classe composta
+ * Classe composta complexa. Implementa uma recursividade da classe componente.
  * 
  * Composite é o padrão de se manipular elementos em uma hierarquia parte todo
  * tornando transparente para o cliente se ele está manipulando uma folha ou uma
  * composição de objetos.
  */
-public class Composit extends Component{
+public class Composit implements Componente{
     /**
      * Criando a lista de componentes filhos
      * 
      * Agregação recursiva
      */
-    private ArrayList<Component> childComponents = new ArrayList<>();
+    private ArrayList<Componente> componentesFilhos = new ArrayList<>();
     /**
      * 
      * Implementando a impressão da lista.
@@ -28,7 +28,7 @@ public class Composit extends Component{
      */
     @Override
     public void print(){
-        for(Component c : childComponents){
+        for(Componente c : componentesFilhos){
             c.print();
         }
     }
@@ -36,14 +36,14 @@ public class Composit extends Component{
      * Adicionando componentes a lista
      * @param c
      */
-    public void add(Component c){
-        childComponents.add(c);
+    public void add(Componente c){
+        componentesFilhos.add(c);
     }
     /**
      * Removendo componentes da lista
      * @param c
      */
-    public void remove(Component c){
-        childComponents.remove(c);
+    public void remove(Componente c){
+        componentesFilhos.remove(c);
     }
 }
